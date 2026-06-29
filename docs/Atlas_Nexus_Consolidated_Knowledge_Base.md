@@ -4,6 +4,33 @@ Generated from `D:/Downloads/Altlas.zip`.
 
 This file classifies, deduplicates, and merges the extracted Atlas / Atlas Nexus / ATXC documents into one Markdown artifact.
 
+## Reader Guide
+
+This repository should be read as a recovered engineering knowledge base, not as a polished product manual.
+
+Recommended reading order:
+
+1. Engineering Specifications
+2. Runtime Recovery and Architecture
+3. Official Tasker Metadata
+4. XML Generation and Workbook
+5. Tasker Project XML
+6. ATXC Compiler
+7. Android Telephony and SIM
+8. Observe Engine Expansion
+
+Use the Duplicate Map as an audit trail. Duplicate entries were removed from the main merge by normalized content hash, while source paths are preserved so the recovery chain remains traceable.
+
+## Normalized Baseline
+
+The consolidated baseline preserves these project rules:
+
+- Treat Tasker exported XML and verified round-trip evidence as the highest practical source for generation behavior.
+- Keep official metadata such as `capabilities.xml`, `datadef.xml`, and `tasker.js` as source authority for capabilities and schema hints.
+- Do not freeze runtime behavior from static documents alone.
+- Separate XML serialization recovery from runtime execution verification.
+- Maintain traceability from every merged section back to its source file.
+
 ## Consolidation Summary
 
 - Total extracted document entries, including nested zips: 408
